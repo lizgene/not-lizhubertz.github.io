@@ -10,6 +10,8 @@ permalink: /:categories/:title
 
 # Build settings
 markdown: kramdown
-gems: ['kramdown']
+gems:
+  - jekyll-redirect-from
+  - kramdown
 # stop Jekyll including your configuration in it’s generated site.
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
