@@ -1,0 +1,46 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler'
+Bundler.require
+
+puts 'Please enter your title'
+title = gets.chomp
+
+puts "Is this poetry or prose?"
+category = gets.chomp
+
+slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+puts "Your current URL slug is #{slug}. Would you like to change it? y/n"
+
+answer = gets.chomp
+if answer == "y"
+  puts "Please enter your new slug in-snake-case-please"
+  slug = gets.chomp
+end
+
+date = DateTime.now.strftime("%F")
+file_name = [date, '-', slug, '.markdown'].join
+file_path = File.expand_path("../../_posts/#{file_name}", __FILE__)
+
+puts "Title: #{title}"
+puts "Slug: #{slug}"
+puts "File name: #{file_name}"
+puts "File path: #{file_path}"
+
+unless File.exist?(file_path)
+  header = <<-HEADER
+---
+layout: post
+title: #{title}
+date: #{date}
+categories: #{category}
+---
+HEADER
+
+  File.open(file_path, 'w') do |f|
+    f.write header
+  end
+end
+
+exec("$EDITOR #{file_path}")
