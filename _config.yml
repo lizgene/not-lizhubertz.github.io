@@ -3,7 +3,8 @@ title: overexposed
 email: overexposed-blog@gmail.com
 description: This is a collection of personal stories.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://overexposed.herokuapp.com" # the base hostname & protocol for your site
+permalink: /:categories/:title
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
