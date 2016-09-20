@@ -5,7 +5,7 @@ date: 2016-09-19
 categories: prose
 ---
 
-This moment was one of those rare flowers of life that blooms but once a season, never two just the same. Captivating and full of promise as it grows, radiant in its summer. Softly and sweetly forlorn as fall turns to winter.  
+This moment was one of those rare flowers of life that blooms but once a season, never two just the same. Captivating and full of promise as it grows, radiant in its summer. Softly and [sweetly forlorn](https://soundcloud.com/manu_cruzate/vals-de-amelie-manu-cruzate) as fall turns to winter.  
 
 My life is a collection of these moments, and so is yours. We keep them with us, pressed and given a place of highest honour on the mantles of our hearts, like my mother keeps her mother’s flower close and her father’s now beside her.   
 
